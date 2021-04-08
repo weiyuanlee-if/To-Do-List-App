@@ -30,12 +30,41 @@ body {
     border: 5px;
     border-radius: 4px;
     border-image-slice: 1;
-    border-image-source: hsla(249, 16%, 48%, 1);
+    border-image: hsla(249, 16%, 48%, 1);
 
-    border-image-source: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-    border-image-source: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    border-image: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    border-image: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
     
-    border-image-source: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    border-image: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+}
+}
+#todoinput:focus {
+    width: 70%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 5px;
+    border-radius: 4px;
+    border-image-slice: 1;
+    border-image: hsla(249, 16%, 48%, 1);
+
+    border-image: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    border-image: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    
+    border-image: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+}
+#todoinput:active {
+    width: 70%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 5px;
+    border-radius: 4px;
+    border-image-slice: 1;
+    border-image: hsla(249, 16%, 48%, 1);
+
+    border-image: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    border-image: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+    
+    border-image: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 }
 
 button {
