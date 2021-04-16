@@ -23,49 +23,73 @@ body {
     padding-top: 10%;
     padding-bottom: 15%;
 }
-#todoinput {
+.inputbox {
     width: 70%;
+    font-size: medium;
     padding: 14px 20px;
     margin: 8px 0;
-    border: 5px;
+    border: 2px solid hsla(249, 16%, 48%, 1);
     border-radius: 4px;
-    border-image-slice: 1;
+
     outline-color: hsla(249, 16%, 48%, 1);
 
     outline-color: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-    outline-color: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-    
-    outline-color: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 
+    outline-color: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+
+    outline-color: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 }
-#todoinput:focus {
+.inputbox:active {
     width: 70%;
+    font-size: medium;
     padding: 14px 20px;
     margin: 8px 0;
-    border: 5px;
+    border: 2px solid hsla(249, 16%, 48%, 1);
     border-radius: 4px;
+
     outline-color: hsla(249, 16%, 48%, 1);
 
     outline-color: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+
     outline-color: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-    
+
     outline-color: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 
 }
-#todoinput:active {
+.inputbox:focus {
     width: 70%;
     padding: 14px 20px;
     margin: 8px 0;
-    border: 5px;
+    border: 2px solid hsla(249, 16%, 48%, 1);
     border-radius: 4px;
- outline-color: hsla(249, 16%, 48%, 1);
+    
+    outline-color: hsla(249, 16%, 48%, 1);
 
     outline-color: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+
     outline-color: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-    
+
+    outline-color: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+}
+
+.inputbox:hover {
+    width: 70%;
+    font-size: medium;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid hsla(249, 16%, 48%, 1);
+    border-radius: 4px;
+
+    outline-color: hsla(249, 16%, 48%, 1);
+
+    outline-color: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+
+    outline-color: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+
     outline-color: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 
 }
+
 
 button {
     background: hsla(249, 16%, 48%, 1);
