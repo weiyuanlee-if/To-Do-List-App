@@ -23,6 +23,9 @@ body {
     padding-top: 10%;
     padding-bottom: 15%;
 }
+#task_completion {
+    outline-color: #F6B5CC;
+}
 .inputbox {
     width: 70%;
     font-size: medium;
