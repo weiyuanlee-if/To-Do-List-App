@@ -17,7 +17,6 @@ body {
 #todolist {
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
     text-align: center;
-    border-radius: 15px;
     background-color: white;
     margin: 25%;
     font-family: 'Open Sans', sans-serif;
@@ -25,9 +24,16 @@ body {
     padding-bottom: 15%;
 }
 
-#task_completion {
-    outline-color: #F6B5CC;
+li {
+
 }
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+
 
 .inputbox {
     width: 70%;
@@ -67,8 +73,18 @@ body {
     outline-color: #F6B5CC;
 
 }
+input.checkbox  {
+    width : 1em;
+    height : 1em;
+}
 
-button {
+#taskinput {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8em;
+ 
+}
+.addButton {
     background: hsla(249, 16%, 48%, 1);
 
     background: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
@@ -78,41 +94,16 @@ button {
     background: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6d678e", endColorstr="#f6b5cc", GradientType=1);
+    
     border-radius: 21px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding: 4px 16px;
+    font-size: 1.5em;
+   margin-left: 0.5em;
+   margin-right: 0px;
+   margin-top: 0.5em;
     height: 40px;
-    width: 153px;
+    width: 40px;
     border: 0px;
-    margin: 0 auto;
-    margin-top: 50px;
-
     color: white;
 }
 
-ul {
-    list-style-type: none;
-    padding: 10px;
-    margin-left: 0px;
-}
-
-.task_buttons {
-
-    display: flex;
-    flex-direction: row;
-    margin-left: 30%;
-    padding-left: 10px;
-}
-
-.task_buttons>div {
-    margin: 5px;
-}
-label {
-    font-size: 1.5em;
-    padding: 0.5em;
-}
-input.checkbox  {
-    width : 1em;
-    height : 1em;
-}
