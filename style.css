@@ -20,44 +20,46 @@ body {
     background-color: white;
     margin: 25%;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 10%;
-    padding-bottom: 15%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+   
 }
 
-li {
-
-}
 ul {
     list-style-type: none;
-    padding: 10px;
     margin-left: 0px;
 }
+li {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
 
 
 
 .inputbox {
     width: 70%;
-    font-size: medium;
+    font-size: 1.5em;
     padding: 14px 20px;
+    font-size: 1.5em;
     margin: 8px 0;
     border: 2px solid hsla(249, 16%, 48%, 1);
-    border-radius: 4px;
-
 }
 
 .inputbox:active {
     width: 70%;
-    font-size: medium;
+    font-size: 1.5em;
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 4px;
-
+    font-size: 1.5em;
     outline-color: #F6B5CC;
 }
 
 .inputbox:hover {
     width: 70%;
-    font-size: medium;
+    font-size: 1.5em;
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 4px;
@@ -66,7 +68,7 @@ ul {
 
 .inputbox:focus {
     width: 70%;
-    font-size: medium;
+    font-size: 1.5em;
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 4px;
@@ -74,36 +76,31 @@ ul {
 
 }
 input.checkbox  {
-    width : 1em;
-    height : 1em;
+    width : 2em;
+    height : 2em;
 }
 
 #taskinput {
     display: flex;
     flex-direction: row;
     padding-left: 8em;
+    padding-right: 2em;
  
 }
 .addButton {
     background: hsla(249, 16%, 48%, 1);
 
-    background: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-
-    background: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-
-    background: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6d678e", endColorstr="#f6b5cc", GradientType=1);
-    
-    border-radius: 21px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-   margin-left: 0.5em;
+    font-size: 2em;
+   margin-left: 0.2em;
    margin-right: 0px;
-   margin-top: 0.5em;
-    height: 40px;
-    width: 40px;
+   margin-top: 0.3em;
+    height: 58px;
+    width: 58px;
     border: 0px;
     color: white;
+}
+.addButton:hover{
+    background-color: hsla(339, 78%, 84%, 1);
 }
 
