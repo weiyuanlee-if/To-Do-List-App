@@ -19,6 +19,7 @@ body {
     text-align: center;
     background-color: white;
     margin: 25%;
+    
     font-family: 'Open Sans', sans-serif;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -26,17 +27,36 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    margin-left: 0px;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
 li {
+    position: relative;
+    padding: 0.3em 0em 0.3em 5.5em;
+    text-align: left;
     font-size: 1.5em;
     cursor: pointer;
 
 }
-
-
-
+.delete_task {
+    background: hsla(249, 16%, 48%, 1);
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+   margin-left: 19em;
+   margin-right: 0px;
+   margin-top: 0.3em;
+    height: 56px;
+    width: 56px;
+    border: 0px;
+    color: white;
+}
+.delete_task:hover {
+    background-color: hsla(339, 78%, 84%, 1); 
+}
 
 .inputbox {
     width: 70%;
@@ -44,6 +64,7 @@ li {
     padding: 14px 20px;
     font-size: 1.5em;
     margin: 8px 0;
+    border-radius: 5px;
     border: 2px solid hsla(249, 16%, 48%, 1);
 }
 
@@ -89,14 +110,14 @@ input.checkbox  {
 }
 .addButton {
     background: hsla(249, 16%, 48%, 1);
-
+    border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
    margin-left: 0.2em;
    margin-right: 0px;
    margin-top: 0.3em;
-    height: 58px;
-    width: 58px;
+    height: 56px;
+    width: 56px;
     border: 0px;
     color: white;
 }
