@@ -1,127 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
+  background: hsla(249, 16%, 48%, 1);
 
+  background: linear-gradient(
+    225deg,
+    hsla(249, 16%, 48%, 1) 0%,
+    hsla(339, 78%, 84%, 1) 100%
+  );
 
-    background: hsla(249, 16%, 48%, 1);
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(249, 16%, 48%, 1) 0%,
+    hsla(339, 78%, 84%, 1) 100%
+  );
 
-    background: linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(249, 16%, 48%, 1) 0%,
+    hsla(339, 78%, 84%, 1) 100%
+  );
 
-    background: -moz-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-
-    background: -webkit-linear-gradient(225deg, hsla(249, 16%, 48%, 1) 0%, hsla(339, 78%, 84%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6d678e", endColorstr="#f6b5cc", GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6d678e", endColorstr="#f6b5cc", GradientType=1);
 }
 
-#todolist {
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-    text-align: center;
-    background-color: white;
-    margin: 25%;
-    
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 5em;
-    padding-bottom: 5em;
-   
+/*Input Container */
+#list-background {
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  text-align: center;
+  background-color: white;
+  margin: 25%;
+
+  font-family: "Open Sans", sans-serif;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-ul {
-    list-style: none;
+.add-task {
+  vertical-align: middle;
+  overflow: auto;
+  background: hsla(249, 16%, 48%, 1);
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  height: 56px;
+  width: 56px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
 
-    margin: 0;
-    padding: 0;
-}
-li {
-    position: relative;
-    padding: 0.3em 0em 0.3em 5.5em;
-    text-align: left;
-    font-size: 1.5em;
-    cursor: pointer;
-
-}
-.delete_task {
-    background: hsla(249, 16%, 48%, 1);
-    position: relative;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-   margin-left: 19em;
-   margin-right: 0px;
-   margin-top: 0.3em;
-    height: 56px;
-    width: 56px;
-    border: 0px;
-    color: white;
-}
-.delete_task:hover {
-    background-color: hsla(339, 78%, 84%, 1); 
+.add-task:hover {
+  vertical-align: middle;
+  background-color: hsla(339, 78%, 84%, 1);
 }
 
 .inputbox {
-    width: 70%;
-    font-size: 1.5em;
-    padding: 14px 20px;
-    font-size: 1.5em;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: 2px solid hsla(249, 16%, 48%, 1);
+  overflow: auto;
+  padding-left: 8em;
+  padding-right: 2em;
+  width: 60%;
+  font-size: 1.5em;
+  padding: 14px 20px;
+  font-size: 1.5em;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 2px solid hsla(249, 16%, 48%, 1);
+  vertical-align: middle;
 }
 
 .inputbox:active {
-    width: 70%;
-    font-size: 1.5em;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    font-size: 1.5em;
-    outline-color: #F6B5CC;
+  width: 60%;
+  font-size: 1.5em;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  font-size: 1.5em;
+  outline-color: #f6b5cc;
+  vertical-align: middle;
 }
 
 .inputbox:hover {
-    width: 70%;
-    font-size: 1.5em;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    border-color: #F6B5CC;
+  width: 60%;
+  font-size: 1.5em;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border-color: #f6b5cc;
+  vertical-align: middle;
 }
 
 .inputbox:focus {
-    width: 70%;
-    font-size: 1.5em;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    outline-color: #F6B5CC;
-
-}
-input.checkbox  {
-    width : 2em;
-    height : 2em;
+  width: 60%;
+  font-size: 1.5em;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  outline-color: #f6b5cc;
+  vertical-align: middle;
 }
 
-#taskinput {
-    display: flex;
-    flex-direction: row;
-    padding-left: 8em;
-    padding-right: 2em;
+/*The List Elements */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    
+  list-style: none;
  
-}
-.addButton {
-    background: hsla(249, 16%, 48%, 1);
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
-   margin-left: 0.2em;
-   margin-right: 0px;
-   margin-top: 0.3em;
-    height: 56px;
-    width: 56px;
-    border: 0px;
-    color: white;
-}
-.addButton:hover{
-    background-color: hsla(339, 78%, 84%, 1);
+  padding: 0.3em 0em 0.3em 5.5em;
+  text-align: left;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
+.delete-task {
+  background: hsla(249, 16%, 48%, 1);
+  position: relative;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  margin-left: 19em;
+  margin-top: 0.3em;
+  height: 56px;
+  width: 56px;
+  border: 0px;
+  color: white;
+  vertical-align: middle;
+}
+
+.delete-task:hover {
+  background-color: hsla(339, 78%, 84%, 1);
+  vertical-align: middle;
+}
+.checked-task {
+  background: hsla(249, 16%, 48%, 1);
+  position: absolute;
+  margin-top: 0.3em;
+  margin-left: 15.5em;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+
+  height: 56px;
+  width: 56px;
+  border: 0px;
+  color: white;
+  vertical-align: middle;
+}
+.checked-task:hover {
+  background-color: hsla(339, 78%, 84%, 1);
+  vertical-align: middle;
+}

@@ -14,22 +14,24 @@
 </head>
 
 <body>
-    <main id="todolist">
-        <h1 class="title">Things To Do</h1>
-        <div id="taskinput">
-        <input id="todoinput" class="inputbox" type="text" placeholder="What are you doing today?">
+    <main id="list-background">
+      <h1 class="title">Things To Do</h1>
+  
+      <form class="form" id="form">
+        <input id="task-input" class="inputbox" type="text" placeholder="What are you doing today?">
         </input>
-      
-        <button class="addButton">+</button>
-    </div>
-        <ul class="do-list">
-            <li class="taskitem">Eat Pizza<button class="delete_task">X</button></li>
-            
+        <button class="add-task" type="submit">+</button>
+      </form>
+  
+      <div class="to-do-list">
+        <ul class="ul-list">
+          <li class="task-item">Eat Pizza<button class="checked-task"><i class="fas fa-check"></i></button><button class="delete-task">X</button></li>
         </ul>
+      </div>
     </main>
-
+  
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-</body>
-
-</html>
+  </body>
+  
+  </html>

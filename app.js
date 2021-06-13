@@ -1,29 +1,44 @@
-let doList = document.querySelector(".do-list");
-let inputBox = document.querySelector(".inputbox");
-let addBtn = document.querySelector(".addButton");
-let doListChild = document.querySelector(".taskitem");
-let deleteBtn = document.querySelector(".delete_task");
+const doList = document.querySelector('.ul-list');
+const form = document.getElementById('form')
+const inputBox = document.querySelector('.inputbox');
+const addBtn = document.querySelector('.add-task');
+const doListChild = document.querySelector('.task-item');
+const deleteBtn = document.querySelectorAll('.delete-task');
+const checkBtn = document.querySelector('.checked-task');
+const listDiv = document.querySelector(".to-do-list");
 
-addBtn.addEventListener("click", function(){
-let newLi = document.createElement('li');
-let liContent = document.createTextNode(inputBox.value);
-newLi.appendChild(liContent);
-doList.appendChild(newLi);
-/*
-if (liContent !== ) {
-    alert("Please write a task name!");
+form.addEventListener('submit', function(e) {
+  //initialize list item and store task
+  e.preventDefault()
+  let task = inputBox.value
+  let taskItem = document.createElement('li')
+  taskItem.classList.add('task-item')
+  taskItem.innerHTML = `${task}`
+  
+  //Add buttons to list-item
+  let checkBtn = document.createElement('button')
+  let deleteBtn = document.createElement('button')
+  checkBtn.classList.add('checked-task')
+  deleteBtn.classList.add('delete-task')
+  deleteBtn.addEventListener('click', deleteTask)
+  //insert fontawesome icon
+  checkBtn.innerHTML = `
+    <i class="fas fa-check"></i>
+  `
+  //insert X text
+  deleteBtn.innerText = 'X'
+  taskItem.appendChild(checkBtn)
+  taskItem.appendChild(deleteBtn)
+  doList.appendChild(taskItem)
+})
+
+
+function deleteTask() {
+  let currentTarget = this.parentNode
+  currentTarget.remove()
 }
-else {
-    document.querySelector('.do-list').appendChild(newLi);
-}
-*/
-});
 
-deleteBtn.addEventListener("click", function(){
-let listStore = document.querySelector('li');
-listStore.remove();
-});
-
+deleteBtn.forEach(btn => btn.addEventListener('click', deleteTask))
 
 /*
 I need to create a delete button for each item in the list
@@ -34,7 +49,7 @@ then i need to create a button
 then i need to attach the button to my list
 I need to do that for every item in the list
 */
-
+/*
 let myNodeList = document.getElementsByTagName('ul'); 
 let i;
 for(i = 0; i < myNodeList.length; i++) {
@@ -43,3 +58,4 @@ for(i = 0; i < myNodeList.length; i++) {
     newDeleteBtn.className = "delete_task";
     myNodeList[i].appendChild(newDeleteBtn);
 }
+*/
