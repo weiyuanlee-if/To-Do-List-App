@@ -59,7 +59,7 @@ currentTarget.classList.toggle("completed")
 
 }
 function editTask() {
-  let editedTask = document.querySelector("li")
+  let editedTask = document.querySelector(".task-item")
   editedTask.contentEditable = true
 }
 
