@@ -105,26 +105,34 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 li {
-    
+  
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  justify-content: space-between;
+ margin-right: 4em;
  
-  padding: 0.3em 0em 0.3em 5.5em;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 4em;
+  overflow: auto;
   text-align: left;
   font-size: 1.5em;
   cursor: pointer;
 }
 
 .delete-task {
+    margin-left: 0em;
   background: hsla(249, 16%, 48%, 1);
-  position: relative;
+  text-align: center;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
-  margin-left: 19em;
-  margin-top: 0.3em;
   height: 56px;
   width: 56px;
   border: 0px;
@@ -137,14 +145,12 @@ li {
   vertical-align: middle;
 }
 .checked-task {
+    margin-left: 17.5em;
   background: hsla(249, 16%, 48%, 1);
-  position: absolute;
-  margin-top: 0.3em;
-  margin-left: 15.5em;
+  text-align: center;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
-
   height: 56px;
   width: 56px;
   border: 0px;
@@ -152,6 +158,27 @@ li {
   vertical-align: middle;
 }
 .checked-task:hover {
+  
   background-color: hsla(339, 78%, 84%, 1);
   vertical-align: middle;
+}
+.completed{
+    text-decoration: line-through;
+}
+.edit-task {
+    margin-left: 17.5em;
+    background: hsla(249, 16%, 48%, 1);
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    height: 56px;
+    width: 56px;
+    border: 0px;
+    color: white;
+    vertical-align: middle;
+}
+.edit-task:hover{
+    background-color: hsla(339, 78%, 84%, 1);
+    vertical-align: middle;
 }
