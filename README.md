@@ -1,13 +1,1 @@
-This is a To Do List with Kanban features. I did a To Do List first in Vanilla JS to learn the basics. Then I will add other features such as responsiveness, Kanban, user profiles, and animation with Angular.
-
-This project is created to master JS basics and attempt Angular. Since Angular is commonly used with .NET developers and C# is my favorite coding language, this project is merely a preparation for future projects involving Angular.
-
-To Be Done:
-
-1. Complete HTML/CSS and Vanilla JS
-
-2. Angular To Do
-
-3. Angular Kanban
-
-4. Pomodoro (optional)
+This is a To Do List app made with HTML/CSS/Javascript. It is responsive without the use of a CSS framework. I used this typical app idea to build the fundamentals of Javascript and DOM, with the adding, removal of list items, and modifying CSS. I then added other features such as a light and dark mode, list item filter, clear all button, edit button, authentication, and local storage. 
